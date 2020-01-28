@@ -1,0 +1,8 @@
+# ERPNext related configs
+ERPNEXT_API_KEY = ''
+ERPNEXT_API_SECRET = ''
+ERPNEXT_URL = ''
+
+# Delay in seconds
+CHECK_BADGE_FREQUENCY = 1
+POST_DETECTION_DELAY = 5 
