@@ -40,7 +40,6 @@ while True:
 
                 # check if a customer is attributed to the badge
                 if (d[0]['customer_name'] != None):
-                    print("Acces autorise")
 
                     url = config.ERPNEXT_URL + "/api/resource/Badge Checkin"
                     timestamp = datetime.datetime.now().__str__()
