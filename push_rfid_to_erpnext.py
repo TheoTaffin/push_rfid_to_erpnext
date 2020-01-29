@@ -32,7 +32,6 @@ while True:
                                        "&filters=[[%22RFID%22,%22rfid_tag%22,%22=%22,%22" + rfid_tag + "%22]]"
 
             r = requests.get(url, headers=headers)
-            print(r.status_code)
             d = r.json()['data']
 
             # check if RFID exists in DB
@@ -40,6 +39,7 @@ while True:
 
                 # check if a customer is attributed to the badge
                 if (d[0]['customer_name'] != None):
+                    print("Acces autorise")
 
                     url = config.ERPNEXT_URL + "/api/resource/Badge Checkin"
                     timestamp = datetime.datetime.now().__str__()
